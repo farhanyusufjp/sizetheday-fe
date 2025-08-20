@@ -7,26 +7,26 @@ import Heading from '@/shared/Heading/Heading';
 
 const SectionProducts = () => {
   return (
-    <div className="container">
-      <Heading showDash className="pb-16">
+    <div className='container'>
+      <Heading showDash className='pb-16'>
         {midText}
       </Heading>
 
-      <div className="space-y-10">
-        <div className="items-center justify-between md:flex">
-          <Heading isMain className="mb-0">
+      <div className='space-y-10'>
+        <div className='items-center justify-between md:flex'>
+          <Heading isMain className='mb-0'>
             New Arrivals
           </Heading>
-          <ButtonPrimary href="/products">Shop Now</ButtonPrimary>
+          <ButtonPrimary href='/products'>Shop Now</ButtonPrimary>
         </div>
 
-        <div className="grid gap-7 md:grid-cols-3">
+        <div className='grid gap-7 md:grid-cols-3'>
           {products.slice(3, 6).map((product) => (
             <ProductCard product={product} key={product.productName} />
           ))}
         </div>
 
-        <div className="mt-16 h-px w-full bg-neutral-300" />
+        <div className='mt-16 h-px w-full bg-neutral-300' />
       </div>
     </div>
   );

@@ -26,38 +26,34 @@ const NextPrev: FC<NextPrevProps> = ({
   return (
     <div className={`nc-NextPrev relative flex items-center ${className}`}>
       <button
-        type="button"
+        type='button'
         className={`${btnClassName} mr-2 flex items-center justify-center rounded-full border ${
-          focus === 'left'
-            ? 'border-primary bg-primary text-white'
-            : 'border-slate-700'
+          focus === 'left' ? 'border-primary bg-primary text-white' : 'border-slate-700'
         }`}
         onClick={(e) => {
           e.preventDefault();
           onClickPrev();
         }}
-        title="Prev"
+        title='Prev'
         disabled={disablePrev}
         onMouseEnter={() => setFocus('left')}
       >
-        <ArrowLeftIcon className="h-5 w-5" />
+        <ArrowLeftIcon className='size-5' />
       </button>
       <button
-        type="button"
+        type='button'
         className={`${btnClassName} flex items-center justify-center rounded-full border ${
-          focus === 'right'
-            ? 'border-primary bg-primary text-white'
-            : 'border-slate-700'
+          focus === 'right' ? 'border-primary bg-primary text-white' : 'border-slate-700'
         }`}
         onClick={(e) => {
           e.preventDefault();
           onClickNext();
         }}
-        title="Next"
+        title='Next'
         disabled={disableNext}
         onMouseEnter={() => setFocus('right')}
       >
-        <ArrowRightIcon className="h-5 w-5" />
+        <ArrowRightIcon className='size-5' />
       </button>
     </div>
   );

@@ -7,8 +7,8 @@ interface ProgressBarProps {
 
 const ProgressBar: FC<ProgressBarProps> = ({ value }) => {
   return (
-    <div className="relative flex h-2 w-full overflow-hidden rounded-full bg-gray">
-      <div style={{ width: `${value}%` }} className="flex h-full bg-primary" />
+    <div className='relative flex h-2 w-full overflow-hidden rounded-full bg-gray'>
+      <div style={{ width: `${value}%` }} className='flex h-full bg-primary' />
     </div>
   );
 };

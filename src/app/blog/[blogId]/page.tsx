@@ -22,9 +22,9 @@ const SingleBlogPage = async (props: Props) => {
   const selectedBlog = await getBlogData(props.params.blogId);
 
   return (
-    <div className="container">
-      <div className="mx-auto max-w-3xl">
-        <div className="pt-10">
+    <div className='container'>
+      <div className='mx-auto max-w-3xl'>
+        <div className='pt-10'>
           <SectionBlogHero
             coverImage={pathOr('', ['coverImage'], selectedBlog)}
             title={pathOr('', ['title'], selectedBlog)}
@@ -32,17 +32,15 @@ const SingleBlogPage = async (props: Props) => {
           />
         </div>
 
-        <div className="pt-16">
-          <SectionBlogBody
-            blogData={pathOr(null, ['blogData'], selectedBlog)}
-          />
+        <div className='pt-16'>
+          <SectionBlogBody blogData={pathOr(null, ['blogData'], selectedBlog)} />
         </div>
 
-        <div className="pb-20">
+        <div className='pb-20'>
           <CommentForm tag={pathOr('', ['tag'], selectedBlog)} />
         </div>
 
-        <div className="grid gap-5 pb-24 md:grid-cols-2">
+        <div className='grid gap-5 pb-24 md:grid-cols-2'>
           {blogs.slice(2, 4).map((blog) => (
             <BlogCard {...blog} key={blog.slug} />
           ))}

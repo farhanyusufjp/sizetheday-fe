@@ -25,13 +25,13 @@ const Radio: FC<RadioProps> = ({
       <input
         id={id}
         name={name}
-        type="radio"
+        type='radio'
         className={`focus:ring-action-primary rounded-full border-neutral-400 bg-transparent text-primary hover:border-neutral-700  focus:ring-primary ${sizeClassName}`}
         onChange={(e) => onChange && onChange(e.target.value)}
         defaultChecked={defaultChecked}
         value={id}
       />
-      {label && <div className="block select-none pl-2.5 sm:pl-3">{label}</div>}
+      {label && <div className='block select-none pl-2.5 sm:pl-3'>{label}</div>}
     </div>
   );
 };

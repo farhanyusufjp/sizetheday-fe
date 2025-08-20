@@ -12,12 +12,12 @@ import { mainPages } from './content';
 
 const SectionMainPages = () => {
   return (
-    <div className="container">
+    <div className='container'>
       <Heading isCenter desc={mainPages.description}>
         {mainPages.heading}
       </Heading>
 
-      <div className="grid gap-5 md:grid-cols-2 md:gap-10 lg:grid-cols-3 lg:gap-12">
+      <div className='grid gap-5 md:grid-cols-2 md:gap-10 lg:grid-cols-3 lg:gap-12'>
         {mainPages.pages.map((DATA) => (
           <motion.div
             initial={{ opacity: 0, y: '50%' }}
@@ -25,22 +25,18 @@ const SectionMainPages = () => {
             transition={{ duration: 0.5 }}
             viewport={{ once: true }}
             key={DATA.pageName}
-            className="relative cursor-pointer overflow-hidden rounded-xl shadow-lg"
+            className='relative cursor-pointer overflow-hidden rounded-xl shadow-lg'
           >
             <Link href={DATA.href}>
               {DATA.CMS && (
-                <div className="absolute right-3 top-3 z-10">
-                  <ButtonPrimary sizeClass="px-3 py-2">CMS</ButtonPrimary>
+                <div className='absolute right-3 top-3 z-10'>
+                  <ButtonPrimary sizeClass='px-3 py-2'>CMS</ButtonPrimary>
                 </div>
               )}
-              <div className="w-full overflow-hidden">
-                <Image
-                  src={DATA.coverImage}
-                  alt="cover-image"
-                  className="w-full object-cover"
-                />
+              <div className='w-full overflow-hidden'>
+                <Image src={DATA.coverImage} alt='cover-image' className='w-full object-cover' />
               </div>
-              <div className="flex w-full items-center justify-center py-6 text-xl font-semibold">
+              <div className='flex w-full items-center justify-center py-6 text-xl font-semibold'>
                 {DATA.pageName}
               </div>
             </Link>
@@ -48,11 +44,11 @@ const SectionMainPages = () => {
         ))}
       </div>
 
-      <div className="mt-14 flex justify-center">
+      <div className='mt-14 flex justify-center'>
         <ButtonPrimary
-          href="https://www.themealchemy.com/products/luxloom"
-          className="shadow-md"
-          sizeClass="px-5 py-4"
+          href='https://www.themealchemy.com/products/luxloom'
+          className='shadow-md'
+          sizeClass='px-5 py-4'
         >
           Buy Template
         </ButtonPrimary>

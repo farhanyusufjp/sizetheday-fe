@@ -24,19 +24,17 @@ const SectionBlogs = () => {
     }
   };
   return (
-    <div className="">
-      <div className="mb-16 space-y-2">
-        <p className="mb-5 text-center">FILTER BY TAGS</p>
-        <div className="flex flex-wrap items-center justify-center gap-5">
+    <div className=''>
+      <div className='mb-16 space-y-2'>
+        <p className='mb-5 text-center'>FILTER BY TAGS</p>
+        <div className='flex flex-wrap items-center justify-center gap-5'>
           {tags.map((tag) => (
             <ButtonSecondary
               key={tag}
-              sizeClass="px-5 py-3"
+              sizeClass='px-5 py-3'
               onClick={() => handleClick(tag)}
               className={`${
-                activeTab === tag
-                  ? 'bg-primary text-white'
-                  : 'border border-neutral-300'
+                activeTab === tag ? 'bg-primary text-white' : 'border border-neutral-300'
               }`}
             >
               {tag}
@@ -44,7 +42,7 @@ const SectionBlogs = () => {
           ))}
         </div>
       </div>
-      <div className="grid gap-8 md:grid-cols-2 lg:grid-cols-3">
+      <div className='grid gap-8 md:grid-cols-2 lg:grid-cols-3'>
         {filteredBlogs?.map((blog) => (
           <BlogCard
             key={blog.slug}

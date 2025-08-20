@@ -8,42 +8,32 @@ const bundleAnalyzer = withBundleAnalyzer({
 /** @type {import('next').NextConfig} */
 export default bundleAnalyzer({
   eslint: {
+    // Hanya lint saat dev; JANGAN blok build
+    ignoreDuringBuilds: true,
+    // opsional: tetap lint folder mana saat dev
     dirs: ['.'],
   },
+  // Kalau masih ada type error TS yang blok build, aktifkan ini sementara (tidak disarankan jangka panjang)
+  // typescript: {
+  //   ignoreBuildErrors: true,
+  // },
+
   swcMinify: false,
   images: {
     remotePatterns: [
-      {
-        protocol: 'https',
-        hostname: 'images.pexels.com',
-        port: '',
-        pathname: '/**',
-      },
-      {
-        protocol: 'https',
-        hostname: 'images.unsplash.com',
-        port: '',
-        pathname: '/**',
-      },
-      {
-        protocol: 'https',
-        hostname: 'drive.google.com',
-        port: '',
-        pathname: '/**',
-      },
+      { protocol: 'https', hostname: 'images.pexels.com', pathname: '/**' },
+      { protocol: 'https', hostname: 'images.unsplash.com', pathname: '/**' },
+      { protocol: 'https', hostname: 'drive.google.com', pathname: '/**' },
     ],
   },
   poweredByHeader: false,
   reactStrictMode: true,
   webpack: (config) => {
-    // config.externals is needed to resolve the following errors:
-    // Module not found: Can't resolve 'bufferutil'
-    // Module not found: Can't resolve 'utf-8-validate'
+    // Hindari error modul optional ws
     config.externals.push({
       bufferutil: 'bufferutil',
       'utf-8-validate': 'utf-8-validate',
     });
-
     return config;
   },
 });

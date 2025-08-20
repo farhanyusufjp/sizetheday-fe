@@ -12,11 +12,7 @@ interface AutoScrollSliderProps {
   options?: Options;
 }
 
-const AutoScrollSlider: FC<AutoScrollSliderProps> = ({
-  children,
-  trigger,
-  options,
-}) => {
+const AutoScrollSlider: FC<AutoScrollSliderProps> = ({ children, trigger, options }) => {
   return (
     <div>
       <Splide options={options} extensions={trigger ? { AutoScroll } : {}}>

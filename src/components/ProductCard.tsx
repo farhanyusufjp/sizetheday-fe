@@ -15,27 +15,24 @@ const ProductCard: FC<ProductCardProps> = ({ product, className }) => {
   const { coverImage, productName, price, slug } = product;
   return (
     <div className={`relative rounded-xl ${className}`}>
-      <div className="relative h-[430px] overflow-hidden rounded-xl">
+      <div className='relative h-[430px] overflow-hidden rounded-xl'>
         <Image
           src={coverImage}
-          alt="coverImage"
-          className="h-full w-full object-cover object-top"
+          alt='coverImage'
+          className='size-full object-cover object-top'
           width={1000}
           height={1000}
         />
-        <Link
-          href={`/products/${slug}`}
-          className="absolute inset-0 h-full w-full"
-        />
+        <Link href={`/products/${slug}`} className='absolute inset-0 size-full' />
       </div>
-      <div className="mt-5 space-y-1">
-        <div className="flex items-center justify-between">
-          <Link href={`/products/${slug}`} className="text-2xl font-medium">
+      <div className='mt-5 space-y-1'>
+        <div className='flex items-center justify-between'>
+          <Link href={`/products/${slug}`} className='text-2xl font-medium'>
             {productName}
           </Link>
           <Variant />
         </div>
-        <p className="text-2xl font-medium text-secondary">Rp.{price}</p>
+        <p className='text-2xl font-medium text-secondary'>Rp.{price}</p>
       </div>
     </div>
   );

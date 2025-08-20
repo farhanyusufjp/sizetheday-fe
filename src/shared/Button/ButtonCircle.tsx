@@ -1,8 +1,7 @@
 import type { ButtonHTMLAttributes } from 'react';
 import React from 'react';
 
-export interface ButtonCircleProps
-  extends ButtonHTMLAttributes<HTMLButtonElement> {
+export interface ButtonCircleProps extends ButtonHTMLAttributes<HTMLButtonElement> {
   size?: string;
   href?: string;
 }
@@ -14,7 +13,7 @@ const ButtonCircle: React.FC<ButtonCircleProps> = ({
 }) => {
   return (
     <button
-      type="button"
+      type='button'
       className={`ttnc-ButtonCircle flex items-center justify-center rounded-full bg-primary !leading-none text-white 
       focus:ring-transparent disabled:bg-opacity-70 ${className} ${size} `}
       {...args}

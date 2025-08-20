@@ -23,14 +23,14 @@ const SingleProductPage = async (props: Props) => {
   const selectedProduct = await getProductData(props.params.productId);
 
   return (
-    <div className="container">
-      <Link href="/products" className="mb-10">
-        <ButtonCircle3 size="w-10 h-10" className="border border-neutral-300">
-          <MdArrowBack className="text-2xl" />
+    <div className='container'>
+      <Link href='/products' className='mb-10'>
+        <ButtonCircle3 size='w-10 h-10' className='border border-neutral-300'>
+          <MdArrowBack className='text-2xl' />
         </ButtonCircle3>
       </Link>
 
-      <div className="mb-20">
+      <div className='mb-20'>
         <SectionProductHeader
           shots={pathOr([], ['shots'], selectedProduct)}
           productName={pathOr('', ['productName'], selectedProduct)}
@@ -39,7 +39,7 @@ const SingleProductPage = async (props: Props) => {
           description={pathOr('', ['description'], selectedProduct)}
         />
       </div>
-      <div className="mb-28">
+      <div className='mb-28'>
         <SectionMoreProducts />
       </div>
     </div>

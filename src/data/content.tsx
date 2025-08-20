@@ -9,97 +9,97 @@ import type { BlogType } from './types';
 
 const ncNanoId = _.uniqueId;
 
-const otherPageChildMenus: NavItemType[] = [
-  {
-    id: ncNanoId(),
-    href: '/home',
-    name: 'Home',
-  },
-  {
-    id: ncNanoId(),
-    href: '/checkout',
-    name: 'Checkout',
-  },
-  {
-    id: ncNanoId(),
-    href: '/contact',
-    name: 'Contact Us',
-  },
-  {
-    id: ncNanoId(),
-    href: '/cart',
-    name: 'Cart',
-  },
-  {
-    id: ncNanoId(),
-    href: '/products',
-    name: 'Collections',
-    type: 'dropdown',
-    children: [
-      {
-        id: ncNanoId(),
-        href: '/products',
-        name: 'Collections',
-      },
-      {
-        id: ncNanoId(),
-        href: '/products/sweat-outfit',
-        name: 'Product Single',
-      },
-    ],
-  },
-  {
-    id: ncNanoId(),
-    href: '/',
-    name: 'Utility Pages',
-    type: 'dropdown',
-    children: [
-      {
-        id: ncNanoId(),
-        href: '/faqs',
-        name: 'FAQS',
-      },
-      {
-        id: ncNanoId(),
-        href: '/gg',
-        name: '404 not found',
-      },
-      {
-        id: ncNanoId(),
-        href: '/signup',
-        name: 'Signup',
-      },
-      {
-        id: ncNanoId(),
-        href: '/login',
-        name: 'Login',
-      },
-      {
-        id: ncNanoId(),
-        href: '/forgot-pass',
-        name: 'Forgot Password',
-      },
-    ],
-  },
-  {
-    id: ncNanoId(),
-    href: '/blog',
-    name: 'Blog Pages',
-    type: 'dropdown',
-    children: [
-      {
-        id: ncNanoId(),
-        href: '/blog',
-        name: 'Blog Page',
-      },
-      {
-        id: ncNanoId(),
-        href: '/blog/chic-sleek-latest-trends-fashion-wonderland',
-        name: 'Blog Single',
-      },
-    ],
-  },
-];
+// const otherPageChildMenus: NavItemType[] = [
+//   {
+//     id: ncNanoId(),
+//     href: '/home',
+//     name: 'Home',
+//   },
+//   {
+//     id: ncNanoId(),
+//     href: '/checkout',
+//     name: 'Checkout',
+//   },
+//   {
+//     id: ncNanoId(),
+//     href: '/contact',
+//     name: 'Contact Us',
+//   },
+//   {
+//     id: ncNanoId(),
+//     href: '/cart',
+//     name: 'Cart',
+//   },
+//   {
+//     id: ncNanoId(),
+//     href: '/products',
+//     name: 'Collections',
+//     type: 'dropdown',
+//     children: [
+//       {
+//         id: ncNanoId(),
+//         href: '/products',
+//         name: 'Collections',
+//       },
+//       {
+//         id: ncNanoId(),
+//         href: '/products/sweat-outfit',
+//         name: 'Product Single',
+//       },
+//     ],
+//   },
+//   {
+//     id: ncNanoId(),
+//     href: '/',
+//     name: 'Utility Pages',
+//     type: 'dropdown',
+//     children: [
+//       {
+//         id: ncNanoId(),
+//         href: '/faqs',
+//         name: 'FAQS',
+//       },
+//       {
+//         id: ncNanoId(),
+//         href: '/gg',
+//         name: '404 not found',
+//       },
+//       {
+//         id: ncNanoId(),
+//         href: '/signup',
+//         name: 'Signup',
+//       },
+//       {
+//         id: ncNanoId(),
+//         href: '/login',
+//         name: 'Login',
+//       },
+//       {
+//         id: ncNanoId(),
+//         href: '/forgot-pass',
+//         name: 'Forgot Password',
+//       },
+//     ],
+//   },
+//   {
+//     id: ncNanoId(),
+//     href: '/blog',
+//     name: 'Blog Pages',
+//     type: 'dropdown',
+//     children: [
+//       {
+//         id: ncNanoId(),
+//         href: '/blog',
+//         name: 'Blog Page',
+//       },
+//       {
+//         id: ncNanoId(),
+//         href: '/blog/chic-sleek-latest-trends-fashion-wonderland',
+//         name: 'Blog Single',
+//       },
+//     ],
+//   },
+// ];
 
 export const NavLinks: NavItemType[] = [
   {
@@ -112,13 +112,7 @@ export const NavLinks: NavItemType[] = [
     name: 'Blog',
     href: '/blog',
   },
-  // {
-  //   id: ncNanoId(),
-  //   name: 'Pages',
-  //   href: '/',
-  //   type: 'dropdown',
-  //   children: otherPageChildMenus,
-  // },
+
   {
     id: ncNanoId(),
     name: 'Collections',
@@ -229,8 +223,7 @@ export const products = [
   },
   {
     slug: 'black-t-shirt',
-    coverImage:
-      '/sora-noir/sora-noir3.png',
+    coverImage: '/sora-noir/sora-noir3.png',
     productName: 'SORA NOIR',
     price: 399.999,
     reviews: 45,
@@ -245,8 +238,7 @@ export const products = [
   },
   {
     slug: 'black-hoodie',
-    coverImage:
-      '/sora-bay/sora-bay4.png',
+    coverImage: '/sora-bay/sora-bay4.png',
     productName: 'SORA BAY',
     price: 399.999,
     reviews: 45,
@@ -261,8 +253,7 @@ export const products = [
   },
   {
     slug: 'yellow-glases',
-    coverImage:
-      '/sora-peony/sora-peony3.png',
+    coverImage: '/sora-peony/sora-peony3.png',
     productName: 'SORA PEONY',
     price: 399.999,
     reviews: 45,
@@ -286,8 +277,7 @@ export const profilesPhotos = [
 export const promoSection = {
   heading: 'Style Is A Way To Say Who You Are Without Having To Speak',
   promoTitle: 'Get 29% Off This Holiday Season Using The Code',
-  photo:
-    '/promophoto.jpg',
+  photo: '/promophoto.jpg',
   review: {
     quote: `"Trends come and go, but a timeless bag never goes out of style."`,
     reviewer: 'jbrck',
@@ -343,7 +333,7 @@ export const contactSection = {
     'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quis quis phasellus eleifend tellus orci ornare.',
   directContactInfo: [
     {
-      icon: <BiSupport className="text-3xl" />,
+      icon: <BiSupport className='text-3xl' />,
       title: 'Order',
       contactLink: {
         href: 'mailto:order@luxloom.com',
@@ -351,7 +341,7 @@ export const contactSection = {
       },
     },
     {
-      icon: <FiTruck className="text-3xl" />,
+      icon: <FiTruck className='text-3xl' />,
       title: 'Start a Return',
       contactLink: {
         href: 'mailto:return@luxloom.com',
@@ -359,7 +349,7 @@ export const contactSection = {
       },
     },
     {
-      icon: <TiClipboard className="text-3xl" />,
+      icon: <TiClipboard className='text-3xl' />,
       title: 'Sizing and Product Info',
       contactLink: {
         href: 'mailto:products@luxloom.com',
@@ -523,8 +513,7 @@ const demoBlogData = {
       'https://images.unsplash.com/photo-1502163140606-888448ae8cfe?q=80&w=1470&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
   },
   sectionThree: {
-    title:
-      'How can individuals incorporate chic and sleek elements into their everyday wardrobes?',
+    title: 'How can individuals incorporate chic and sleek elements into their everyday wardrobes?',
     description:
       'Augue lacus viverra vitae congue eu consequat ac felis donec. Pellentesque pulvinar pellentesque habitant morbi tristique senectus. Morbi tristique senectus et netus et malesuada fames ac turpis. Iaculis eu non diam phasellus vestibulum lorem sed.',
   },
@@ -544,14 +533,12 @@ const demoBlogData = {
     '“Lorem ipsum dolor sit amet, consectetur adipiscing elit. Dolor porta rhoncus, viverra sit et auctor. Augue in volutpat sed eget in etiam.”',
   sectionFive: [
     {
-      title:
-        'What materials or fabrics are emphasized in creating the chic and sleek look?',
+      title: 'What materials or fabrics are emphasized in creating the chic and sleek look?',
       description:
         'Tincidunt nunc pulvinar sapien et ligula. Sed blandit libero volutpat sed cras ornare arcu dui vivamus. Aliquet bibendum enim facilisis gravida neque convallis a cras. Molestie nunc non blandit massa enim nec dui nunc.',
     },
     {
-      title:
-        'How does the collection cater to diverse fashion preferences and body types?',
+      title: 'How does the collection cater to diverse fashion preferences and body types?',
       description:
         'Tincidunt nunc pulvinar sapien et ligula. Sed blandit libero volutpat sed cras ornare arcu dui vivamus. Aliquet bibendum enim facilisis gravida neque convallis a cras. Molestie nunc non blandit massa enim nec dui nunc.',
     },
@@ -560,8 +547,7 @@ const demoBlogData = {
 
 export const blogs: BlogType[] = [
   {
-    title:
-      'Chic and Sleek: Unveiling the Latest Trends in Our Fashion Wonderland',
+    title: 'Chic and Sleek: Unveiling the Latest Trends in Our Fashion Wonderland',
     brief:
       'Lorem ipsum dolor sit amet, lormol amenrtol consectetur adipiscing elit, sed do eiusmod tempor.',
     date: 'October 2, 2022',
@@ -605,8 +591,7 @@ export const blogs: BlogType[] = [
     slug: 'accessorize-life-ultimate-guide-statement-pieces',
   },
   {
-    title:
-      'Effortless Elegance: Mastering Everyday Glamour with Our Essentials',
+    title: 'Effortless Elegance: Mastering Everyday Glamour with Our Essentials',
     brief:
       'Lorem ipsum dolor sit amet, lormol amenrtol consectetur adipiscing elit, sed do eiusmod tempor.',
     date: 'October 2, 2022',
@@ -628,8 +613,7 @@ export const blogs: BlogType[] = [
     slug: 'fashion-forward-uncovering-hottest-looks-season',
   },
   {
-    title:
-      'Sustainable Style: Embrace Eco-Friendly Fashion Finds in Our Collection',
+    title: 'Sustainable Style: Embrace Eco-Friendly Fashion Finds in Our Collection',
     brief:
       'Lorem ipsum dolor sit amet, lormol amenrtol consectetur adipiscing elit, sed do eiusmod tempor.',
     date: 'October 2, 2022',

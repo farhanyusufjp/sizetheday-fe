@@ -57,14 +57,12 @@ const NavigationItem: FC<NavigationItemWithRouterProps> = ({ menuItem }) => {
   const renderMainItem = (item: NavItemType) => {
     return (
       <Link
-        rel="noopener noreferrer"
-        className="inline-flex items-center font-medium hover:text-secondary "
+        rel='noopener noreferrer'
+        className='inline-flex items-center font-medium hover:text-secondary '
         href={item.href || '/'}
       >
         {item.name}
-        {item.type && (
-          <BsChevronDown className="-mr-1 ml-1 h-4 w-4" aria-hidden="true" />
-        )}
+        {item.type && <BsChevronDown className='-mr-1 ml-1 size-4' aria-hidden='true' />}
       </Link>
     );
   };
@@ -73,14 +71,12 @@ const NavigationItem: FC<NavigationItemWithRouterProps> = ({ menuItem }) => {
     return (
       <Link
         target={item.targetBlank ? '_blank' : undefined}
-        rel="noopener noreferrer"
-        className="hover flex items-center rounded-md px-4 py-2 font-normal hover:bg-secondary/10"
+        rel='noopener noreferrer'
+        className='hover flex items-center rounded-md px-4 py-2 font-normal hover:bg-secondary/10'
         href={item.href || ''}
       >
         {item.name}
-        {item.type && (
-          <BsChevronDown className="-mr-1 ml-1 h-4 w-4" aria-hidden="true" />
-        )}
+        {item.type && <BsChevronDown className='-mr-1 ml-1 size-4' aria-hidden='true' />}
       </Link>
     );
   };
@@ -89,9 +85,9 @@ const NavigationItem: FC<NavigationItemWithRouterProps> = ({ menuItem }) => {
     const isHover = menuCurrentHovers.includes(item.id);
     return (
       <Popover
-        as="li"
+        as='li'
         key={item.id}
-        className="menu-item menu-dropdown relative flex items-center px-2"
+        className='menu-item menu-dropdown relative flex items-center px-2'
         onMouseEnter={() => onMouseEnterMenu(item.id)}
         onMouseLeave={() => onMouseLeaveMenu(item.id)}
       >
@@ -101,24 +97,21 @@ const NavigationItem: FC<NavigationItemWithRouterProps> = ({ menuItem }) => {
             <Transition
               as={Fragment}
               show={isHover}
-              enter="transition ease-out duration-150"
-              enterFrom="opacity-0 translate-y-1"
-              enterTo="opacity-100 translate-y-0"
-              leave="transition ease-in duration-150"
-              leaveFrom="opacity-100 translate-y-0"
-              leaveTo="opacity-0 translate-y-1"
+              enter='transition ease-out duration-150'
+              enterFrom='opacity-0 translate-y-1'
+              enterTo='opacity-100 translate-y-0'
+              leave='transition ease-in duration-150'
+              leaveFrom='opacity-100 translate-y-0'
+              leaveTo='opacity-0 translate-y-1'
             >
-              <Popover.Panel
-                static
-                className="sub-menu absolute left-full top-0 z-10 w-56 pl-2"
-              >
-                <ul className="relative grid space-y-1 rounded-lg bg-white py-4 shadow-lg ring-1 ring-black ring-opacity-5">
+              <Popover.Panel static className='sub-menu absolute left-full top-0 z-10 w-56 pl-2'>
+                <ul className='relative grid space-y-1 rounded-lg bg-white py-4 shadow-lg ring-1 ring-black ring-opacity-5'>
                   {item.children?.map((i) => {
                     if (i.type) {
                       return renderDropdownMenuNavlinkHasChild(i);
                     }
                     return (
-                      <li key={i.id} className="px-2">
+                      <li key={i.id} className='px-2'>
                         {renderDropdownMenuNavlink(i)}
                       </li>
                     );
@@ -137,7 +130,7 @@ const NavigationItem: FC<NavigationItemWithRouterProps> = ({ menuItem }) => {
     const isHover = menuCurrentHovers.includes(menuDropdown.id);
     return (
       <Popover
-        as="li"
+        as='li'
         className={`menu-item menu-dropdown relative flex items-center ${
           menuDropdown.isNew ? 'menuIsNew_lv1' : ''
         }`}
@@ -150,27 +143,24 @@ const NavigationItem: FC<NavigationItemWithRouterProps> = ({ menuItem }) => {
             <Transition
               as={Fragment}
               show={isHover}
-              enter="transition ease-out duration-150 "
-              enterFrom="opacity-0 translate-y-1"
-              enterTo="opacity-100 translate-y-0"
-              leave="transition ease-in duration-150"
-              leaveFrom="opacity-100 translate-y-0"
-              leaveTo="opacity-0 translate-y-1"
+              enter='transition ease-out duration-150 '
+              enterFrom='opacity-0 translate-y-1'
+              enterTo='opacity-100 translate-y-0'
+              leave='transition ease-in duration-150'
+              leaveFrom='opacity-100 translate-y-0'
+              leaveTo='opacity-0 translate-y-1'
             >
               <Popover.Panel
                 static
-                className="sub-menu absolute left-0 top-full z-10 w-56 will-change-transform"
+                className='sub-menu absolute left-0 top-full z-10 w-56 will-change-transform'
               >
-                <ul className="relative grid space-y-1 rounded-lg bg-white py-4 shadow-lg ring-1 ring-black ring-opacity-5">
+                <ul className='relative grid space-y-1 rounded-lg bg-white py-4 shadow-lg ring-1 ring-black ring-opacity-5'>
                   {menuDropdown.children?.map((i) => {
                     if (i.type) {
                       return renderDropdownMenuNavlinkHasChild(i);
                     }
                     return (
-                      <li
-                        key={i.id}
-                        className={`px-2 ${i.isNew ? 'menuIsNew' : ''}`}
-                      >
+                      <li key={i.id} className={`px-2 ${i.isNew ? 'menuIsNew' : ''}`}>
                         {renderDropdownMenuNavlink(i)}
                       </li>
                     );
@@ -188,11 +178,7 @@ const NavigationItem: FC<NavigationItemWithRouterProps> = ({ menuItem }) => {
     case 'dropdown':
       return renderDropdownMenu(menuItem);
     default:
-      return (
-        <li className="menu-item flex items-center">
-          {renderMainItem(menuItem)}
-        </li>
-      );
+      return <li className='menu-item flex items-center'>{renderMainItem(menuItem)}</li>;
   }
 };
 

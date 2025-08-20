@@ -11,20 +11,16 @@ interface SectionBlogHeroProps {
   brief: string;
 }
 
-const SectionBlogHero: FC<SectionBlogHeroProps> = ({
-  coverImage,
-  title,
-  brief,
-}) => {
+const SectionBlogHero: FC<SectionBlogHeroProps> = ({ coverImage, title, brief }) => {
   return (
-    <div className="">
-      <Heading desc={brief} isCenter className="mx-auto mb-5 max-w-3xl">
+    <div className=''>
+      <Heading desc={brief} isCenter className='mx-auto mb-5 max-w-3xl'>
         {title}
       </Heading>
       <Image
         src={coverImage}
-        alt="cover image"
-        className="w-full rounded-2xl"
+        alt='cover image'
+        className='w-full rounded-2xl'
         width={2000}
         height={1000}
       />

@@ -19,28 +19,28 @@ const Next: FC<NextProps> = ({
   return (
     <div className={`nc-Next text-slate-500 dark:text-slate-400 ${className}`}>
       <button
-        type="button"
+        type='button'
         className={`${btnClassName} flex items-center justify-center rounded-full border-2 border-transparent hover:border-slate-200 dark:hover:border-slate-600`}
         onClick={onClickNext}
-        title="Next"
-        data-glide-dir=">"
+        title='Next'
+        data-glide-dir='>'
       >
-        <svg className={svgSize} viewBox="0 0 24 24" fill="none">
+        <svg className={svgSize} viewBox='0 0 24 24' fill='none'>
           <path
-            d="M14.4301 5.92993L20.5001 11.9999L14.4301 18.0699"
-            stroke="currentColor"
-            strokeWidth="1.5"
-            strokeMiterlimit="10"
-            strokeLinecap="round"
-            strokeLinejoin="round"
+            d='M14.4301 5.92993L20.5001 11.9999L14.4301 18.0699'
+            stroke='currentColor'
+            strokeWidth='1.5'
+            strokeMiterlimit='10'
+            strokeLinecap='round'
+            strokeLinejoin='round'
           />
           <path
-            d="M3.5 12H20.33"
-            stroke="currentColor"
-            strokeWidth="1.5"
-            strokeMiterlimit="10"
-            strokeLinecap="round"
-            strokeLinejoin="round"
+            d='M3.5 12H20.33'
+            stroke='currentColor'
+            strokeWidth='1.5'
+            strokeMiterlimit='10'
+            strokeLinecap='round'
+            strokeLinejoin='round'
           />
         </svg>
       </button>

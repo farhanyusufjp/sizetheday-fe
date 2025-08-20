@@ -43,14 +43,12 @@ const SectionSlider = () => {
 
   const slides = Array.from({ length: 10 }, (_, index) => (
     <SplideSlide key={index}>
-      <span className="font-medium text-secondary text-lg">
-        Change the way you carry everyday
-      </span>
+      <span className='text-lg font-medium text-secondary'>Change the way you carry everyday</span>
     </SplideSlide>
   ));
 
   return (
-    <div className="border-y border-neutral-300 py-10">
+    <div className='border-y border-neutral-300 py-10'>
       <AutoScrollSlider trigger options={sliderOptions}>
         {slides}
       </AutoScrollSlider>

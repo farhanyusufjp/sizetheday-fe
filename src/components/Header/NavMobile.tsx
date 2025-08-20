@@ -17,7 +17,7 @@ const NavMobile: React.FC<NavMobileProps> = ({ onClickClose }) => {
   /* eslint-disable */
   const renderMenuChild = (
     item: NavItemType,
-    itemClass = ' pl-3 font-medium ',
+    itemClass = " pl-3 font-medium ",
   ) => {
     return (
       <ul className="nav-mobile-sub-menu pb-1 pl-6 text-base">
@@ -30,7 +30,7 @@ const NavMobile: React.FC<NavMobileProps> = ({ onClickClose }) => {
               className={`mt-0.5 flex rounded-lg pr-4 text-sm hover:bg-neutral-100 ${itemClass}`}
             >
               <span
-                className={`py-1 ${!i.children ? 'block w-full' : ''}`}
+                className={`py-1 ${!i.children ? "block w-full" : ""}`}
                 onClick={onClickClose}
               >
                 {i.name}
@@ -50,9 +50,7 @@ const NavMobile: React.FC<NavMobileProps> = ({ onClickClose }) => {
               )}
             </Link>
             {i.children && (
-              <Disclosure.Panel>
-                {renderMenuChild(i, 'pl-3')}
-              </Disclosure.Panel>
+              <Disclosure.Panel>{renderMenuChild(i, "pl-3")}</Disclosure.Panel>
             )}
           </Disclosure>
         ))}
@@ -70,7 +68,7 @@ const NavMobile: React.FC<NavMobileProps> = ({ onClickClose }) => {
           }}
         >
           <span
-            className={!item.children ? 'block w-full' : ''}
+            className={!item.children ? "block w-full" : ""}
             onClick={onClickClose}
           >
             {item.name}
@@ -105,7 +103,7 @@ const NavMobile: React.FC<NavMobileProps> = ({ onClickClose }) => {
       <div className="mt-3 px-5 py-3">
         <div className="flex flex-row items-center gap-5">
           <ButtonPrimary
-             href="https://www.themealchemy.com/products/luxloom"
+            href="https://www.themealchemy.com/products/luxloom"
             sizeClass="px-7 py-4"
           >
             Buy Template

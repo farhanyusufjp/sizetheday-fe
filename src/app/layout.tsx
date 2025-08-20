@@ -42,8 +42,8 @@ export default function RootLayout({
   children: React.ReactNode;
 }) {
   return (
-    <html lang="en">
-      <body className="">
+    <html lang='en'>
+      <body className=''>
         <Header />
         <Suspense fallback={<Loading />}>{children}</Suspense>
         <Footer />

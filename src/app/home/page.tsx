@@ -10,27 +10,27 @@ import SectionStyle from './SectionStyle';
 const page = () => {
   return (
     <div>
-      <div className="pb-10">
+      <div className='pb-10'>
         <SectionHeader />
       </div>
 
       {/* <div className="pb-1"> */}
-        <SectionSlider />
+      <SectionSlider />
       {/* </div> */}
 
-      <div className="py-24">
+      <div className='py-24'>
         <SectionProducts />
       </div>
 
-      <div className="pb-24">
+      <div className='pb-24'>
         <SectionCategories />
       </div>
 
-      <div className="pb-24">
+      <div className='pb-24'>
         <SectionMidBanner />
       </div>
 
-      <div className="pb-24">
+      <div className='pb-24'>
         <SectionStyle />
       </div>
     </div>

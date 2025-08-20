@@ -32,9 +32,7 @@ const Heading: React.FC<HeadingProps> = ({
       className={`nc-Section-Heading relative mx-auto flex flex-col justify-between sm:flex-row sm:items-end ${className}`}
     >
       <div className={isCenter ? 'mx-auto mb-2 w-full text-center' : ''}>
-        {title && (
-          <p className="text-2xl font-medium uppercase text-primary">{title}</p>
-        )}
+        {title && <p className='text-2xl font-medium uppercase text-primary'>{title}</p>}
         <h2
           style={{ lineHeight: '1.2em' }}
           className={`${
@@ -44,16 +42,16 @@ const Heading: React.FC<HeadingProps> = ({
         >
           {children}{' '}
           {showDash && (
-            <div className="hidden items-center md:flex">
-              <div className="h-px w-48 bg-primary" />
-              <FaStarOfLife className="text-4xl text-primary" />
+            <div className='hidden items-center md:flex'>
+              <div className='h-px w-48 bg-primary' />
+              <FaStarOfLife className='text-4xl text-primary' />
             </div>
           )}
         </h2>
-        {desc && <p className="mt-5 text-neutral-500">{desc}</p>}
+        {desc && <p className='mt-5 text-neutral-500'>{desc}</p>}
       </div>
       {hasNextPrev && !isCenter && (
-        <div className="mt-4 flex shrink-0 justify-end sm:ml-2 sm:mt-0">
+        <div className='mt-4 flex shrink-0 justify-end sm:ml-2 sm:mt-0'>
           <NextPrev {...args} />
         </div>
       )}

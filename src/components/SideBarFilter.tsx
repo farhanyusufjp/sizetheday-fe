@@ -45,16 +45,16 @@ const SidebarFilters = () => {
   const [rangePrices, setRangePrices] = useState([100, 500]);
   const renderSizes = () => {
     return (
-      <div className="relative flex flex-col space-y-4 pb-8">
-        <h3 className="mb-2.5 font-medium">Sizes</h3>
-        <div className="grid gap-4">
+      <div className='relative flex flex-col space-y-4 pb-8'>
+        <h3 className='mb-2.5 font-medium'>Sizes</h3>
+        <div className='grid gap-4'>
           {sizes.map((item) => (
-            <div key={item.name} className="">
+            <div key={item.name} className=''>
               <Checkbox
                 name={item.name}
                 label={item.name}
-                sizeClassName="w-5 h-5"
-                labelClassName="text-sm font-normal"
+                sizeClassName='w-5 h-5'
+                labelClassName='text-sm font-normal'
               />
             </div>
           ))}
@@ -65,12 +65,12 @@ const SidebarFilters = () => {
 
   const renderColors = () => {
     return (
-      <div className="relative flex flex-col space-y-4 pb-8">
-        <h3 className="mb-2.5 font-medium">Colors</h3>
-        <div className="grid grid-cols-6 gap-2">
+      <div className='relative flex flex-col space-y-4 pb-8'>
+        <h3 className='mb-2.5 font-medium'>Colors</h3>
+        <div className='grid grid-cols-6 gap-2'>
           {colors.map((color) => (
             <button
-              type="button"
+              type='button'
               key={color.color}
               className={`${color.color} h-5 w-full rounded-md ring ring-transparent ${color.ringColor}`}
             />
@@ -83,54 +83,49 @@ const SidebarFilters = () => {
   // OK
   const renderTabsPriceRage = () => {
     return (
-      <div className="relative flex flex-col space-y-5 py-8 pr-3">
-        <div className="space-y-5">
-          <span className="font-medium">Price</span>
+      <div className='relative flex flex-col space-y-5 py-8 pr-3'>
+        <div className='space-y-5'>
+          <span className='font-medium'>Price</span>
           <Slider
             range
             min={PRICE_RANGE[0]}
             max={PRICE_RANGE[1]}
             step={1}
-            defaultValue={[
-              pathOr(0, [0], rangePrices),
-              pathOr(0, [1], rangePrices),
-            ]}
+            defaultValue={[pathOr(0, [0], rangePrices), pathOr(0, [1], rangePrices)]}
             allowCross={false}
-            onChange={(_input: number | number[]) =>
-              setRangePrices(_input as number[])
-            }
+            onChange={(_input: number | number[]) => setRangePrices(_input as number[])}
           />
         </div>
 
-        <div className="flex justify-between space-x-5">
+        <div className='flex justify-between space-x-5'>
           <div>
-            <div className="block text-sm font-medium">Min price</div>
-            <div className="relative mt-1 rounded-md">
-              <span className="pointer-events-none absolute inset-y-0 right-4 flex items-center text-neutral-500 sm:text-sm">
+            <div className='block text-sm font-medium'>Min price</div>
+            <div className='relative mt-1 rounded-md'>
+              <span className='pointer-events-none absolute inset-y-0 right-4 flex items-center text-neutral-500 sm:text-sm'>
                 $
               </span>
               <input
-                type="text"
-                name="minPrice"
+                type='text'
+                name='minPrice'
                 disabled
-                id="minPrice"
-                className="block w-32 rounded-full border-neutral-300 bg-transparent pl-4 pr-10 sm:text-sm"
+                id='minPrice'
+                className='block w-32 rounded-full border-neutral-300 bg-transparent pl-4 pr-10 sm:text-sm'
                 value={rangePrices[0]}
               />
             </div>
           </div>
           <div>
-            <div className="block text-sm font-medium">Max price</div>
-            <div className="relative mt-1 rounded-md">
-              <span className="pointer-events-none absolute inset-y-0 right-4 flex items-center text-neutral-500 sm:text-sm">
+            <div className='block text-sm font-medium'>Max price</div>
+            <div className='relative mt-1 rounded-md'>
+              <span className='pointer-events-none absolute inset-y-0 right-4 flex items-center text-neutral-500 sm:text-sm'>
                 $
               </span>
               <input
-                type="text"
+                type='text'
                 disabled
-                name="maxPrice"
-                id="maxPrice"
-                className="block w-32 rounded-full border-neutral-300 bg-transparent pl-4 pr-10 sm:text-sm"
+                name='maxPrice'
+                id='maxPrice'
+                className='block w-32 rounded-full border-neutral-300 bg-transparent pl-4 pr-10 sm:text-sm'
                 value={rangePrices[1]}
               />
             </div>
@@ -143,17 +138,17 @@ const SidebarFilters = () => {
   // OK
   const renderTabsOrder = () => {
     return (
-      <div className="relative flex flex-col space-y-4 py-8">
-        <h3 className="mb-2.5 font-medium">Availability</h3>
-        <div className="grid gap-4">
+      <div className='relative flex flex-col space-y-4 py-8'>
+        <h3 className='mb-2.5 font-medium'>Availability</h3>
+        <div className='grid gap-4'>
           {sortOrderRadios.map((item) => (
             <Radio
               id={item.id}
               key={item.id}
-              name="radioNameSort"
+              name='radioNameSort'
               label={item.name}
-              sizeClassName="w-5 h-5"
-              className="!text-sm"
+              sizeClassName='w-5 h-5'
+              className='!text-sm'
             />
           ))}
         </div>
@@ -162,8 +157,8 @@ const SidebarFilters = () => {
   };
 
   return (
-    <div className="top-28 lg:sticky">
-      <div className="divide-y divide-neutral-300">
+    <div className='top-28 lg:sticky'>
+      <div className='divide-y divide-neutral-300'>
         {renderTabsPriceRage()}
         {renderColors()}
         {renderSizes()}

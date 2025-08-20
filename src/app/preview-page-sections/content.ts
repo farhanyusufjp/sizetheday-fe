@@ -49,8 +49,7 @@ export const includesCardsData = [
 
 export const midSection = {
   heading: 'Looking for more amazing Templates?',
-  description:
-    'Take a look at our collection of 100+ premium Templates at ThemeAlchemy.',
+  description: 'Take a look at our collection of 100+ premium Templates at ThemeAlchemy.',
   href: 'https://www.themealchemy.com',
 };
 

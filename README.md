@@ -1,6 +1,6 @@
 # LuxLoom Ecommerce Template for Next JS 13+, Tailwind CSS 3.3 and TypeScript
 
-🚀 LuxLoom Ecommerce Template for Next JS 13+ with App Router support, Tailwind CSS and TypeScript ⚡️ Made with developer 
+🚀 LuxLoom Ecommerce Template for Next JS 13+ with App Router support, Tailwind CSS and TypeScript ⚡️ Made with developer
 experience first: Next.js, TypeScript, ESLint, Prettier, Husky, Lint-Staged, Commitlint, Netlify, PostCSS, Tailwind CSS)
 
 ### Features
@@ -11,7 +11,7 @@ Developer experience first:
 - 🔥 Type checking [TypeScript](https://www.typescriptlang.org)
 - 💎 Integrate with [Tailwind CSS](https://tailwindcss.com)
 - ✅ Strict Mode for TypeScript and React 18
-- 🌈 Light and Dark Mode 
+- 🌈 Light and Dark Mode
 - ♻️ Type-safe environment variables with T3 Env
 - ⌨️ Form with React Hook From
 - 📏 Linter with [ESLint](https://eslint.org) (default NextJS, NextJS Core Web Vitals, Tailwind CSS and Airbnb configuration)
@@ -29,6 +29,7 @@ Developer experience first:
 - 🖱️ One click deployment with Vercel or Netlify (or manual deployment to any hosting services)
 
 Built-in feature from Next.js:
+
 - ☕ Minify HTML & CSS
 - 💨 Live reload
 - ✅ Cache busting

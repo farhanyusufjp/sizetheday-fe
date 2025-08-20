@@ -8,7 +8,7 @@
     "build-stats": "cross-env ANALYZE=true npm run build",
     "clean": "rimraf .next .swc out coverage",
     "lint": "next lint",
-    "format": "next lint --fix && prettier '**/*.{json,yaml}' --write --ignore-path .gitignore",
+    "format": "next lint --fix && prettier \"**/*.{ts,tsx,js,jsx,css,scss,md,mdx,json,yml,yaml}\" --write --ignore-path .gitignore",
     "check-types": "tsc --noEmit --pretty && tsc --project cypress --noEmit --pretty",
     "test": "jest",
     "commit": "cz",
@@ -26,6 +26,7 @@
     "test-storybook:ci": "start-server-and-test serve-storybook http://localhost:6006 test-storybook",
     "prepare": "husky install",
     "postbuild": "next-sitemap"
+
   },
   "dependencies": {
     "@clerk/nextjs": "^4.24.1",
@@ -117,7 +118,8 @@
     "lint-staged": "^14.0.1",
     "npm-run-all": "^4.1.5",
     "postcss": "^8.4.31",
-    "prettier": "^3.0.3",
+    "prettier": "^3.6.2",
+    "prettier-plugin-tailwindcss": "^0.6.14",
     "rimraf": "^5.0.5",
     "semantic-release": "^19.0.5",
     "start-server-and-test": "^2.0.1",

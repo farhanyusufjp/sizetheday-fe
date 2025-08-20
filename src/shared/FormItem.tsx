@@ -8,17 +8,12 @@ export interface FormItemProps {
   children?: React.ReactNode;
 }
 
-const FormItem: FC<FormItemProps> = ({
-  children,
-  className = '',
-  label,
-  desc,
-}) => {
+const FormItem: FC<FormItemProps> = ({ children, className = '', label, desc }) => {
   return (
     <div className={className}>
-      {label && <div className="font-medium">{label}</div>}
-      <div className="mt-1.5">{children}</div>
-      {desc && <div className="mt-1.5 block text-neutral-500 ">{desc}</div>}
+      {label && <div className='font-medium'>{label}</div>}
+      <div className='mt-1.5'>{children}</div>
+      {desc && <div className='mt-1.5 block text-neutral-500 '>{desc}</div>}
     </div>
   );
 };

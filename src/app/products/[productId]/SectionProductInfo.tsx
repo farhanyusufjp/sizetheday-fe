@@ -22,7 +22,7 @@ const SectionProductInfo: FC<SectionProductInfoProps> = ({
   reviews,
 }) => {
   return (
-    <div className="grid gap-16 lg:grid-cols-2">
+    <div className='grid gap-16 lg:grid-cols-2'>
       <ProductInfoTab overview={overview} shipment_details={shipment_details} />
       <Ratings rating={ratings} reviews={reviews} />
     </div>
