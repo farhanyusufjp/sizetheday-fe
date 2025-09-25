@@ -14,11 +14,11 @@ const ImageShowCase: FC<ImageShowCaseProps> = ({ shots }) => {
 
   return (
     <div className='space-y-5 rounded-2xl p-2'>
-      <div className='relative overflow-hidden rounded-2xl md:h-[500px]'>
+      <div className='relative overflow-hidden rounded-2xl md:h-[600px]'>
         <Image
           src={pathOr('', [activeImageIndex], shots)}
           alt='shoe image'
-          className='size-full object-cover object-top'
+          className='size-full object-fit object-center'
           width={1000}
           height={1000}
         />
@@ -35,7 +35,7 @@ const ImageShowCase: FC<ImageShowCaseProps> = ({ shots }) => {
               <Image
                 src={shot}
                 alt='shoe image'
-                className='size-full object-cover object-top'
+                className='size-full object-fit'
                 width={500}
                 height={500}
               />

@@ -127,7 +127,7 @@ export const NavLinks: NavItemType[] = [
 
 export const headerSection = {
   title: 'TRENDY FASHION ZONE',
-  heading: 'Change the way you carry everyday',
+  heading: 'NEW ARRIVALS',
 };
 
 // export const newItemsData = [
@@ -173,97 +173,100 @@ export const midText =
   'Stay stylish with our collection of modern bags made for today’s trendsetters';
 
 export const products = [
-  {
-    slug: 'brown-coat',
-    coverImage:
-      'https://images.unsplash.com/photo-1619603364937-8d7af41ef206?q=80&w=1374&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
-    productName: 'Brown Coat',
-    price: 159,
-    reviews: 45,
-    description:
-      'Lorem ipsum, dolor sit amet consectetur adipisicing elit. Vitae, est eum magnam doloremque, at adipisci debitis, similique dolores ipsa unde necessitatibus vero quibusdam nostrum numquam!',
-    shots: [
-      'https://images.unsplash.com/photo-1619603364937-8d7af41ef206?q=80&w=1374&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
-      'https://images.unsplash.com/photo-1509631179647-0177331693ae?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1yZWxhdGVkfDF8fHxlbnwwfHx8fHw%3D',
-      'https://images.unsplash.com/photo-1512101903502-7eb0c9022c74?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1yZWxhdGVkfDJ8fHxlbnwwfHx8fHw%3D',
-      'https://images.unsplash.com/photo-1496217590455-aa63a8350eea?q=80&w=1374&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
-    ],
-  },
-  {
-    slug: 'sweat-outfit',
-    coverImage:
-      'https://images.unsplash.com/photo-1515886657613-9f3515b0c78f?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8ZmFzaGlvbiUyMG1vZGVsfGVufDB8fDB8fHww',
-    productName: 'Sweat Outfit',
-    price: 129,
-    reviews: 45,
-    description:
-      'Lorem ipsum, dolor sit amet consectetur adipisicing elit. Vitae, est eum magnam doloremque, at adipisci debitis, similique dolores ipsa unde necessitatibus vero quibusdam nostrum numquam!',
-    shots: [
-      'https://images.unsplash.com/photo-1515886657613-9f3515b0c78f?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8ZmFzaGlvbiUyMG1vZGVsfGVufDB8fDB8fHww',
-      'https://images.unsplash.com/photo-1509631179647-0177331693ae?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1yZWxhdGVkfDF8fHxlbnwwfHx8fHw%3D',
-      'https://images.unsplash.com/photo-1512101903502-7eb0c9022c74?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1yZWxhdGVkfDJ8fHxlbnwwfHx8fHw%3D',
-      'https://images.unsplash.com/photo-1496217590455-aa63a8350eea?q=80&w=1374&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
-    ],
-  },
-  {
-    slug: 'sweat-shirt',
-    coverImage:
-      'https://images.unsplash.com/photo-1578681994506-b8f463449011?q=80&w=1470&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
-    productName: 'Sweat Shirt',
-    price: 299,
-    reviews: 45,
-    description:
-      'Lorem ipsum, dolor sit amet consectetur adipisicing elit. Vitae, est eum magnam doloremque, at adipisci debitis, similique dolores ipsa unde necessitatibus vero quibusdam nostrum numquam!',
-    shots: [
-      'https://images.unsplash.com/photo-1578681994506-b8f463449011?q=80&w=1470&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
-      'https://images.unsplash.com/photo-1509631179647-0177331693ae?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1yZWxhdGVkfDF8fHxlbnwwfHx8fHw%3D',
-      'https://images.unsplash.com/photo-1512101903502-7eb0c9022c74?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1yZWxhdGVkfDJ8fHxlbnwwfHx8fHw%3D',
-      'https://images.unsplash.com/photo-1496217590455-aa63a8350eea?q=80&w=1374&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
-    ],
-  },
+  // {
+  //   slug: 'brown-coat',
+  //   coverImage:
+  //     'https://images.unsplash.com/photo-1619603364937-8d7af41ef206?q=80&w=1374&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
+  //   productName: 'Brown Coat',
+  //   price: 159,
+  //   reviews: 45,
+  //   description:
+  //     'Lorem ipsum, dolor sit amet consectetur adipisicing elit. Vitae, est eum magnam doloremque, at adipisci debitis, similique dolores ipsa unde necessitatibus vero quibusdam nostrum numquam!',
+  //   shots: [
+  //     'https://images.unsplash.com/photo-1619603364937-8d7af41ef206?q=80&w=1374&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
+  //     'https://images.unsplash.com/photo-1509631179647-0177331693ae?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1yZWxhdGVkfDF8fHxlbnwwfHx8fHw%3D',
+  //     'https://images.unsplash.com/photo-1512101903502-7eb0c9022c74?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1yZWxhdGVkfDJ8fHxlbnwwfHx8fHw%3D',
+  //     'https://images.unsplash.com/photo-1496217590455-aa63a8350eea?q=80&w=1374&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
+  //   ],
+  // },
+  // {
+  //   slug: 'sweat-outfit',
+  //   coverImage:
+  //     'https://images.unsplash.com/photo-1515886657613-9f3515b0c78f?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8ZmFzaGlvbiUyMG1vZGVsfGVufDB8fDB8fHww',
+  //   productName: 'Sweat Outfit',
+  //   price: 129,
+  //   reviews: 45,
+  //   description:
+  //     'Lorem ipsum, dolor sit amet consectetur adipisicing elit. Vitae, est eum magnam doloremque, at adipisci debitis, similique dolores ipsa unde necessitatibus vero quibusdam nostrum numquam!',
+  //   shots: [
+  //     'https://images.unsplash.com/photo-1515886657613-9f3515b0c78f?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8ZmFzaGlvbiUyMG1vZGVsfGVufDB8fDB8fHww',
+  //     'https://images.unsplash.com/photo-1509631179647-0177331693ae?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1yZWxhdGVkfDF8fHxlbnwwfHx8fHw%3D',
+  //     'https://images.unsplash.com/photo-1512101903502-7eb0c9022c74?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1yZWxhdGVkfDJ8fHxlbnwwfHx8fHw%3D',
+  //     'https://images.unsplash.com/photo-1496217590455-aa63a8350eea?q=80&w=1374&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
+  //   ],
+  // },
+  // {
+  //   slug: 'sweat-shirt',
+  //   coverImage:
+  //     'https://images.unsplash.com/photo-1578681994506-b8f463449011?q=80&w=1470&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
+  //   productName: 'Sweat Shirt',
+  //   price: 299,
+  //   reviews: 45,
+  //   description:
+  //     'Lorem ipsum, dolor sit amet consectetur adipisicing elit. Vitae, est eum magnam doloremque, at adipisci debitis, similique dolores ipsa unde necessitatibus vero quibusdam nostrum numquam!',
+  //   shots: [
+  //     'https://images.unsplash.com/photo-1578681994506-b8f463449011?q=80&w=1470&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
+  //     'https://images.unsplash.com/photo-1509631179647-0177331693ae?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1yZWxhdGVkfDF8fHxlbnwwfHx8fHw%3D',
+  //     'https://images.unsplash.com/photo-1512101903502-7eb0c9022c74?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1yZWxhdGVkfDJ8fHxlbnwwfHx8fHw%3D',
+  //     'https://images.unsplash.com/photo-1496217590455-aa63a8350eea?q=80&w=1374&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
+  //   ],
+  // },
   {
     slug: 'black-t-shirt',
-    coverImage: '/sora-noir/sora-noir3.png',
+    coverImage: '/sora-noir/soranoir-cat_1.png',
     productName: 'SORA NOIR',
-    price: 399.999,
+    price: 349000,
     reviews: 45,
+    link:'https://shopee.co.id/SeizetheDay-SORA-Noir-Sling-Bag-Large-Capacity-Crossbody-Bag-Water-Repellent-Adjustable-Strap-Fits-15-Inch-Laptop-i.1379877434.43714159444',
     description:
-      'Lorem ipsum, dolor sit amet consectetur adipisicing elit. Vitae, est eum magnam doloremque, at adipisci debitis, similique dolores ipsa unde necessitatibus vero quibusdam nostrum numquam!',
+      'Sora Sling Bag by Seize The Day is designed for those who need function without compromising on design. Built with a water repellent premium Nylon and a fully adjustable strap, Sora adapts effortlessly to your movement – from work, study, to creative sessions on the go. With its spacious main compartment that fits up to a 15-inch laptop, an integrated bottle holder, a dedicated laptop sleeve, and a front wide pocket for notebooks or iPad, Sora gives you more space to carry what matters. Minimal yet versatile, this sling bag is made for daily use, travel, and work-life balance.',
     shots: [
-      '/sora-noir/sora-noir1.png',
-      '/sora-noir/sora-noir2.png',
-      '/sora-noir/sora-noir3.png',
-      '/sora-noir/sora-noir4.png',
+      '/sora-noir/soranoir-cat_1.png',
+      '/sora-noir/soranoir-cat_2.png',
+      '/sora-noir/soranoir-cat_3.png',
+      '/sora-noir/soranoir-cat_4.png',
     ],
   },
   {
     slug: 'black-hoodie',
-    coverImage: '/sora-bay/sora-bay4.png',
+    coverImage: '/sora-bay/sorabay-cat_1.png',
     productName: 'SORA BAY',
-    price: 399.999,
+    price: 349000,
     reviews: 45,
+    link:'https://shopee.co.id/SeizetheDay-SORA-Bay-Sling-Bag-Large-Capacity-Crossbody-Bag-Water-Repellent-Adjustable-Strap-Fits-15-Inch-Laptop-i.1379877434.41564171597',
     description:
-      'Lorem ipsum, dolor sit amet consectetur adipisicing elit. Vitae, est eum magnam doloremque, at adipisci debitis, similique dolores ipsa unde necessitatibus vero quibusdam nostrum numquam!',
+      'Sora Sling Bag by Seize The Day is designed for those who need function without compromising on design. Built with a water repellent premium Nylon and a fully adjustable strap, Sora adapts effortlessly to your movement – from work, study, to creative sessions on the go. With its spacious main compartment that fits up to a 15-inch laptop, an integrated bottle holder, a dedicated laptop sleeve, and a front wide pocket for notebooks or iPad, Sora gives you more space to carry what matters. Minimal yet versatile, this sling bag is made for daily use, travel, and work-life balance.',
     shots: [
-      '/sora-bay/sora-bay1.png',
-      '/sora-bay/sora-bay2.png',
-      '/sora-bay/sora-bay3.png',
-      '/sora-bay/sora-bay4.png',
+      '/sora-bay/sorabay-cat_1.png',
+      '/sora-bay/sorabay-cat_2.png',
+      '/sora-bay/sorabay-cat_3.png',
+      '/sora-bay/sorabay-cat_4.png',
     ],
   },
   {
     slug: 'yellow-glases',
-    coverImage: '/sora-peony/sora-peony3.png',
+    coverImage: '/sora-peony/sorapeony-cat_1.png',
     productName: 'SORA PEONY',
-    price: 399.999,
+    price: 349000,
     reviews: 45,
+    link:'https://shopee.co.id/SeizetheDay-SORA-Peony-Sling-Bag-Large-Capacity-Crossbody-Bag-Water-Repellent-Adjustable-Strap-Fits-15-Inch-Laptop-i.1379877434.40264159959',
     description:
-      'Lorem ipsum, dolor sit amet consectetur adipisicing elit. Vitae, est eum magnam doloremque, at adipisci debitis, similique dolores ipsa unde necessitatibus vero quibusdam nostrum numquam!',
+      'Sora Sling Bag by Seize The Day is designed for those who need function without compromising on design. Built with a water repellent premium Nylon and a fully adjustable strap, Sora adapts effortlessly to your movement – from work, study, to creative sessions on the go. With its spacious main compartment that fits up to a 15-inch laptop, an integrated bottle holder, a dedicated laptop sleeve, and a front wide pocket for notebooks or iPad, Sora gives you more space to carry what matters. Minimal yet versatile, this sling bag is made for daily use, travel, and work-life balance.',
     shots: [
-      '/sora-peony/sora-peony1.png',
-      '/sora-peony/sora-peony2.png',
-      '/sora-peony/sora-peony3.png',
-      '/sora-peony/sora-peony4.png',
+      '/sora-peony/sorapeony-cat_1.png',
+      '/sora-peony/sorapeony-cat_2.png',
+      '/sora-peony/sorapeony-cat_3.png',
+      '/sora-peony/sorapeony-cat_4.png',
     ],
   },
 ];

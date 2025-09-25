@@ -5,6 +5,7 @@ export type ProductType = {
   productName: string;
   coverImage: StaticImageData | string;
   price: number;
+  link:string;
 };
 
 export type BlogData = {

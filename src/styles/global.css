@@ -1,13 +1,27 @@
-@import url("https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&display=swap");
+/* @import url("https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&display=swap"); */
 
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
-* {
+/* * {
   font-family: "Space Grotesk", sans-serif;
+  
+} */
+
+@font-face {
+  font-family: "Acumin Pro";
+  src: url("/fonts/Acumin-RPro.otf") format("opentype");
+  font-weight: 400;
+  font-style: normal;
 }
 
+@font-face {
+  font-family: "Acumin Pro";
+  src: url("/fonts/Acumin-BdPro.otf") format("opentype");
+  font-weight: 700;
+  font-style: normal;
+}
 .container {
   width: 100%;
   margin-right: auto;

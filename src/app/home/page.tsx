@@ -1,38 +1,47 @@
 import React from 'react';
 
-import SectionCategories from './SectionCategories';
+// import SectionCategories from './SectionCategories';
 import SectionHeader from './SectionHeader';
-import SectionMidBanner from './SectionMidBanner';
+import SectionsubHeader from './SectionSubHeader';
+// import SectionMidBanner from './SectionMidBanner';
 import SectionProducts from './SectionProducts';
 import SectionSlider from './SectionSlider';
-import SectionStyle from './SectionStyle';
+// import SectionStyle from './SectionStyle';
+import SectionDescription from './SectionDesctiption';
+import SectionGalery from './SectionGalery';
+import SectionTestimonial from './SectionTestimonial';
+import SectionPromo from './SectionPromo';
 
 const page = () => {
   return (
     <div>
-      <div className='pb-10'>
-        <SectionHeader />
+      
+     
+      <SectionHeader />
+      <SectionsubHeader />
+    <SectionSlider /> 
+      <SectionDescription/>
+
+      <div className='pb-24'>
+      <SectionGalery/>
       </div>
 
-      {/* <div className="pb-1"> */}
-      <SectionSlider />
-      {/* </div> */}
-
-      <div className='py-24'>
+      <div className='pb-10'>
         <SectionProducts />
       </div>
 
-      <div className='pb-24'>
-        <SectionCategories />
-      </div>
+        <div  className='pb-20'><SectionTestimonial/></div>
+        <div  className='pb-20'><SectionPromo/></div>
 
-      <div className='pb-24'>
+   
+
+      {/* <div className='pb-24'>
         <SectionMidBanner />
-      </div>
+      </div> */}
 
-      <div className='pb-24'>
+      {/* <div className='pb-24'>
         <SectionStyle />
-      </div>
+      </div> */}
     </div>
   );
 };

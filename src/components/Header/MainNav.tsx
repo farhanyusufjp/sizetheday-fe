@@ -12,27 +12,20 @@ import MenuBar from './MenuBar';
 
 const MainNav = () => {
   return (
-    <div className='container flex items-center justify-between'>
-      <div className='flex-1'>
+    <div className='flex w-full items-center justify-between px-4'>
+      {/* Logo di pojok kiri */}
+      <div>
         <Logo />
       </div>
 
-      <div className='hidden items-center gap-7 lg:flex'>
+      {/* Navigation menu di pojok kanan */}
+      <div className='hidden items-center gap-7 lg:flex text-lg'>
         {NavLinks.map((item) => (
           <NavigationItem key={item.id} menuItem={item} />
         ))}
       </div>
 
-      <div className='hidden flex-1 items-center justify-end gap-7 lg:flex'>
-        {/* <RiSearch2Line className="text-2xl" /> */}
-
-        {/* <Link href="/signup">
-          <LuUser2 className="text-2xl" />
-        </Link> */}
-
-        {/* <CartSideBar /> */}
-      </div>
-
+      {/* Mobile menu tetap di pojok kanan */}
       <div className='lg:hidden'>
         <MenuBar />
       </div>

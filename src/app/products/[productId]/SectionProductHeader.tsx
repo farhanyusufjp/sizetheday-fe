@@ -3,10 +3,10 @@ import React from 'react';
 import { MdStar } from 'react-icons/md';
 
 import ImageShowCase from '@/components/ImageShowCase';
-import SizeSelect from '@/components/SizeSelect';
+// import SizeSelect from '@/components/SizeSelect';
 import ButtonPrimary from '@/shared/Button/ButtonPrimary';
 import Heading from '@/shared/Heading/Heading';
-import Variant from '@/shared/Variant/Variant';
+// import Variant from '@/shared/Variant/Variant';
 
 interface SectionProductHeaderProps {
   shots: string[];
@@ -44,13 +44,13 @@ const SectionProductHeader: FC<SectionProductHeaderProps> = ({
           </div>
           <span className='text-sm text-neutral-500'>({reviews}k)Reviews</span>
         </div>
-        <p className='text-2xl font-semibold text-secondary'>${price}.00</p>
-        <SizeSelect />
+        <p className='text-2xl font-semibold text-black'>Rp.{price}</p>
+        {/* <SizeSelect /> */}
 
-        <div>
+        {/* <div>
           <h4 className='mb-5 font-medium'>Colours available</h4>
           <Variant sizes='w-8 h-8' />
-        </div>
+        </div> */}
 
         <div className='mt-5 flex items-center gap-5'>
           <ButtonPrimary href='/checkout' className='w-full'>
