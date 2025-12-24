@@ -11,14 +11,17 @@ import SectionDescription from './SectionDesctiption';
 import SectionGalery from './SectionGalery';
 import SectionTestimonial from './SectionTestimonial';
 import SectionPromo from './SectionPromo';
+import SectionVideo from './sectionVideo'
 
 const page = () => {
   return (
     <div>
       
      
-      <SectionHeader />
-      <SectionsubHeader />
+    <SectionHeader />
+    {/* <SectionVideo/> */}
+    
+    <SectionsubHeader />
     <SectionSlider /> 
       <SectionDescription/>
 

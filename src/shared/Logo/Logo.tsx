@@ -10,15 +10,14 @@ interface LogoProps {
 
 const Logo: FC<LogoProps> = ({}) => {
   return (
-    <Link className='flex cursor-pointer items-center gap-2 text-primary' href='/'>
-      {/* <MdOutlineFilterVintage className="text-4xl" /> */}
-      <div className='relative h-16 w-60 overflow-hidden rounded-lg'>
+    <Link className='flex cursor-pointer items-center text-primary pl-2 sm:pl-0' href='/'>
+      <div className='relative h-10 w-32 sm:h-14 sm:w-48 overflow-hidden rounded-lg'>
         <Image
-          src='/logo.jpg' // atau .svg
+          src='/logo.png'
           alt='SeizeTheDay Logo'
           fill
-          className='object-cover' // kunci cover
-          sizes='400px'
+          className='object-cover'
+          sizes='(max-width: 640px) 128px, 192px'
           priority
         />
       </div>

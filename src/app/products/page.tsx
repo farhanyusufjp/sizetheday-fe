@@ -25,7 +25,10 @@ const page = () => {
           </div>
           <div className='grid flex-1 gap-10 sm:grid-cols-2 xl:grid-cols-2 2xl:gap-12 '>
             {products.map((item) => (
-              <ProductCard product={item} key={item.slug} />
+              <ProductCard
+                product={{ ...item, link: item.link ?? '' }}
+                key={item.slug}
+              />
             ))}
           </div>
         </div>

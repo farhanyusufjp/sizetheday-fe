@@ -27,7 +27,6 @@ const IMAGES = [
 const SectionHeader = () => {
   const [currentImage, setCurrentImage] = useState(0);
 
-  // Preload
   useEffect(() => {
     IMAGES.forEach(item => {
       const img = new window.Image();
@@ -47,53 +46,49 @@ const SectionHeader = () => {
 
   return (
     <div className="w-full">
-      {/* Kontainer rasio 16:9 supaya gambar tidak dipaksa crop */}
-      <div
-        className="
-          relative w-full
-          aspect-[16/9]        /* pertahankan 1920x1080 */
-          bg-black             /* warna belakang untuk letterbox */
-        "
-      >
-        {/* Gambar tidak pernah kepotong */}
+      <div className="relative w-full aspect-[16/9] bg-black">
         <Image
           src={currentSlide.src}
           alt=""
           fill
           priority
-          // penting: contain, bukan cover
           className="object-contain"
-          // opsional: posisikan fokus (mis. tengah-atas):
-          // style={{ objectPosition: 'center 30%' }}
         />
-
-        {/* Overlay tipis (opsional) */}
         <div className="absolute inset-0 bg-black/30" />
 
-        {/* Konten */}
-        <div className="relative z-10 flex h-full items-center px-6 md:px-12">
-          <div className="max-w-xl">
-            <h1 className="text-2xl font-bold sm:text-3xl md:text-5xl leading-tight drop-shadow text-white">
-              {currentSlide.title}
-            </h1>
-            <p className="mt-2 text-sm md:text-lg text-gray-100/95">
-              {currentSlide.subtitle}
-            </p>
-            <div className="mt-5 flex gap-3">
-              <a
-                href={currentSlide.cta.href}
-                className="rounded-full bg-[#145FE2] px-6 py-2.5 text-sm font-medium text-white shadow-md transition hover:bg-[#0e47ad]"
-              >
-                {currentSlide.cta.label}
-              </a>
-              <a
-                href="/about"
-                className="rounded-full border-2 border-[#F8E180] bg-white/10 px-6 py-2.5 text-sm font-medium text-[#F8E180] backdrop-blur-sm transition hover:bg-[#F8E180] hover:text-black"
-              >
-                Learn More
-              </a>
-            </div>
+        {/* DESKTOP (≥ md) */}
+        <div className="absolute inset-y-0 left-12 z-10 hidden md:flex flex-col justify-center gap-6">
+          {/* Title & subtitle */}
+          <h2 className="text-white text-4xl lg:text-5xl font-bold drop-shadow-lg leading-tight max-w-2xl">
+            {currentSlide.title}
+          </h2>
+          <p className="text-white/80 text-lg max-w-xl">{currentSlide.subtitle}</p>
+
+          {/* Tombol sejajar horizontal */}
+          <div className="flex gap-4">
+            <a
+              href={currentSlide.cta.href}
+              className="rounded-full bg-[#145FE2] px-8 py-3 text-base font-medium text-white shadow-md transition hover:bg-[#0e47ad] text-center"
+            >
+              {currentSlide.cta.label}
+            </a>
+            <a
+              href="/about"
+              className="rounded-full border-2 border-[#F8E180] bg-white/10 px-8 py-3 text-base font-medium text-[#F8E180] backdrop-blur-sm transition hover:bg-[#F8E180] hover:text-black text-center"
+            >
+              Learn More
+            </a>
           </div>
+        </div>
+
+        {/* MOBILE (< md) */}
+        <div className="absolute bottom-4 right-4 z-10 md:hidden">
+          <a
+            href={currentSlide.cta.href}
+            className="rounded-full bg-[#145FE2] px-4 py-2 text-xs font-medium text-white shadow-md transition hover:bg-[#0e47ad] text-center"
+          >
+            {currentSlide.cta.label}
+          </a>
         </div>
 
         {/* Indicators */}

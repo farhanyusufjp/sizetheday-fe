@@ -16,7 +16,7 @@ const SectionProducts = () => {
        
 
         <div className='grid gap-7 md:grid-cols-3'>
-          {products.slice(0, 3).map((product) => (
+          {products.slice(3, 6).map((product) => (
             <ProductCard product={product} key={product.productName} />
           ))}
         </div>

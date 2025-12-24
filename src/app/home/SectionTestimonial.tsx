@@ -39,21 +39,21 @@
     title = 'What they said:',
     items = [
         {
-        name: 'AGUS',
+        name: 'abigailfirsta',
         text:
-            'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.',
+            'Setelah lama ga beli tas, this one is my best purchase!! Suka banget sama warna navy nyaa, dan bahan tasnya tebal jadi semoga kuat. Sangat2 fungsional karena bisa dimodelin totebag dan shoulder bag. Bulan depan mau aka bawa ngonserr 😍 thank youu kakk',
         rating: 5,
         },
         {
-        name: 'BUDI',
+        name: 'skyve.s',
         text:
-            'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.',
+            'desainnya unik, talinya adjustable bisa backpack dan shoulder bag, muat banyak barang, jahitan arpih dan bahannya soft',
         rating: 5,
         },
         {
-        name: 'SITI',
+        name: 'ayunurjanah60',
         text:
-            'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.',
+            'Bagus banget, stylish dan lucu, muat banyak barang. Warnanya juga bagus bagus. bisa digunakan di berbagai kalangan usia.',
         rating: 5,
         },
     ],
