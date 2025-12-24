@@ -8,6 +8,7 @@ import Logo from '@/shared/Logo/Logo';
 
 // import CartSideBar from '../CartSideBar';
 import NavigationItem from '../NavItem';
+import ProductSearch from '../ProductSearch';
 import MenuBar from './MenuBar';
 
 const MainNav = () => {
@@ -23,6 +24,7 @@ const MainNav = () => {
         {NavLinks.map((item) => (
           <NavigationItem key={item.id} menuItem={item} />
         ))}
+        <ProductSearch />
       </div>
 
       {/* Mobile menu */}
